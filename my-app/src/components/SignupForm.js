@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axiosWithAuth from "../utils/axiosWithAuth";
 import * as yup from "yup";
-import { Paragraph, Header, Button, Input } from "../styles/StyledComponents";
+import {
+  Paragraph,
+  Header,
+  Button,
+  Input,
+  FormContainer,
+} from "../styles/StyledComponents";
 
 const initialFormValues = {
   username: "",
@@ -95,7 +101,7 @@ export default function Form() {
   return (
     <div>
       <form onSubmit={submit}>
-        <div className="form-container">
+        <FormContainer>
           <Header>Register Here!</Header>
 
           <Input
@@ -146,7 +152,7 @@ export default function Form() {
               );
             })}
           </div>
-        </div>
+        </FormContainer>
       </form>
     </div>
   );

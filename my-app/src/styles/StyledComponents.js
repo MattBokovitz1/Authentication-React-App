@@ -23,6 +23,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   background: #8db596;
   text-decoration: none;
+  padding: 3% 2% 2% 3%;
 `;
 
 export const LinksDiv = styled.div`
@@ -55,6 +56,12 @@ export const Logo = styled.div`
 `;
 
 // SignUp
+
+export const FormContainer = styled.div`
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`;
 
 export const Header = styled.h2`
   font-size: 3rem;

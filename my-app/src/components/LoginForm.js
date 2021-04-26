@@ -9,6 +9,7 @@ import {
   Button,
   Input,
   Quote,
+  FormContainer,
 } from "../styles/StyledComponents";
 
 const initialFormValues = {
@@ -118,7 +119,7 @@ export default function LoginForm() {
   return (
     <div>
       <form onSubmit={submit}>
-        <div className="form-container">
+        <FormContainer>
           <Header>Login</Header>
 
           <Input
@@ -157,7 +158,7 @@ export default function LoginForm() {
               </Quote>
             );
           })}
-        </div>
+        </FormContainer>
       </form>
     </div>
   );
