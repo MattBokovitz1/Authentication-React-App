@@ -7,6 +7,7 @@ import {
   Button,
   Input,
   FormContainer,
+  Background,
 } from "../styles/StyledComponents";
 
 const initialFormValues = {
@@ -63,6 +64,7 @@ export default function Form() {
     };
     postNewRegister(newRegister);
   };
+
   const formSchema = yup.object().shape({
     username: yup.string().required("Must include username."),
     password: yup
@@ -99,7 +101,7 @@ export default function Form() {
   });
 
   return (
-    <div>
+    <Background>
       <form onSubmit={submit}>
         <FormContainer>
           <Header>Register Here!</Header>
@@ -154,6 +156,6 @@ export default function Form() {
           </div>
         </FormContainer>
       </form>
-    </div>
+    </Background>
   );
 }

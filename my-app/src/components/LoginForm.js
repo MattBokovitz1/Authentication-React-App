@@ -10,6 +10,8 @@ import {
   Input,
   Quote,
   FormContainer,
+  Background,
+  QuoteBackground,
 } from "../styles/StyledComponents";
 
 const initialFormValues = {
@@ -117,7 +119,7 @@ export default function LoginForm() {
   });
 
   return (
-    <div>
+    <Background>
       <form onSubmit={submit}>
         <FormContainer>
           <Header>Login</Header>
@@ -151,15 +153,15 @@ export default function LoginForm() {
           {quotes.map((quote) => {
             return (
               <Quote>
-                <div key={quote.id}>
+                <QuoteBackground key={quote.id}>
                   <Paragraph>"{quote.quote}"</Paragraph>
                   <Paragraph>{quote.author}</Paragraph>
-                </div>
+                </QuoteBackground>
               </Quote>
             );
           })}
         </FormContainer>
       </form>
-    </div>
+    </Background>
   );
 }
