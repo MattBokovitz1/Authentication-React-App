@@ -23,7 +23,8 @@ export const Nav = styled.nav`
   justify-content: space-between;
   background: #8db596;
   text-decoration: none;
-  padding: 3% 2% 2% 3%;
+  padding: 2% 2% 0 2%;
+  margin: 0;
 `;
 
 export const LinksDiv = styled.div`
@@ -65,9 +66,8 @@ export const FormContainer = styled.div`
 
 export const Header = styled.h2`
   font-size: 3rem;
-  margin-bottom: 8%;
   padding: 0% 0% 1% 0%;
-  color: #92817a;
+  color: white;
 `;
 
 export const Input = styled.input`
@@ -83,6 +83,11 @@ export const Input = styled.input`
 export const Button = styled.button`
   font-size: 1rem;
   margin: 0.5% 0% 5% 0%;
+  background: #8db596;
+`;
+
+export const QuoteBackground = styled.div`
+  background: #8db596;
 `;
 
 export const Quote = styled.div`
